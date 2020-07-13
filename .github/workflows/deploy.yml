@@ -1,0 +1,62 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Deploy
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    # List of software in this github image : https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1804-README.md
+    # All the dependencies I need are already there : nodejs10, python3, g++, make, ssh, rsync.
+    runs-on: ubuntu-18.04
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+    
+    # the VM already has python. This ensure we have the right nodejs version in PATH, among other things
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    # the VM already has node. This ensure we have the right nodejs version in PATH, among other things
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10'
+        
+    # Runs commands
+    - name: Npm install
+      run: npm install
+
+    - name: Build statics eleventy in docs/
+      run: npx eleventy --output=docs
+
+    - name: Commit and push docs/
+      run: |
+        git config --global user.name 'roumigus-deploy'
+        git config --global user.email 'roumigus@deploy.noreply.github.com'
+        git commit -m "Automated commit /docs by Github Action" -a docs/
+        git push
+    #- name: Deploy statics to my Hetzner server via rsync
+    #  env:
+    #    SSH_REMOTE_USER: "cv-deploy"
+    #    SSH_DEPLOY_PRIVKEY: ${{ secrets.SSH_DEPLOY_PRIVKEY }}
+    #    SSH_REMOTE_HOST: "49.12.107.134"
+    #    SSH_REMOTE_DEST: "/var/www/resume"
+    #    KEYNAME: "id_rsa"
+    #    SOURCE: "dist/"
+    #  run: |
+    #    echo "$SSH_DEPLOY_PRIVKEY" > "$KEYNAME"
+    #    chmod 600 "$KEYNAME"
+    #    rsync -rltgoDzvO --delete --protect-args -e "ssh -p 22 -o StrictHostKeyChecking=no -i $KEYNAME" "$SOURCE" "$SSH_REMOTE_USER@$SSH_REMOTE_HOST:$SSH_REMOTE_DEST"
+    #    rm -f "$KEYNAME"
