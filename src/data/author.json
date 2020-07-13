@@ -1,44 +1,39 @@
 {
-    "name": "Anna Quincey",
-    "occupation": "Front-End Developer",
-    "location": "Vienna, AT",
+    "name": "Simon Roumiguieres",
+    "occupation": "DevOps Engineer",
+    "location": "France",
     "avatar": "avatar.jpg",
-    "pronouns": "she/her",
-    "email": "anna.quincey@gmail.com",
-    "telephone": "+01 23 456 789",
-    "website": "https://annaquincey.dev",
+    "pronouns": "he/him",
+    "email": "simon.roumiguiers@gmail.com",
+    "telephone": "+33 6 66 77 87 40",
     "skills": [
-        "HTML",
-        "CSS",
-        "Javascript / ES6",
-        "UI Design",
-        "React",
-        "Git"
+        "GNU/Linux and BSD systems, system utilitaries : ssh, sed, strace, supervisor, systemd, package managers",
+        "Scripting and basics in programming : POSIX shell, bash, zsh, python, ruby, php, nodejs, rust",
+        "Clouds : VmWare, AWS, OVH, Hetzner",
+        "CM, IaC, CI/CD, containerization : chef, ansible, terraform, packer, capistrano, jenkins, git, gitlab, github, docker, kubernetes",
+        "Monitoring : centreon (nagios), datadog, prometheus",
+        "Databases : mysql, galera postgresql, redis, memcache, elasticsearch, kibana, filebeat, logstash, curator",
+        "Webservers, load balancers : apache, nginx, haproxy, varnish, heartbeat"
     ],
     "languages": [
         {
-            "name": "English",
+            "name": "French",
             "level": "native"
         },
         {
-            "name": "German",
+            "name": "English",
             "level": "fluent"
         },
         {
-            "name": "French",
-            "level": "basic"
+            "name": "Vietnamese",
+            "level": "người bắt đầu (newbie)"
         }
     ],
     "social": [
         {
-            "name": "Github",
-            "user": "@annaquincey",
-            "url": "https://github.com/annaquincey"
-        },
-        {
             "name": "LinkedIn",
-            "user": "AnnaQncy",
-            "url": "https://www.linkedin.com/in/annaquincey"
+            "user": "simon-roumiguieres",
+            "url": "https://www.linkedin.com/in/simon-roumiguieres-08696686/"
         }
     ]
 }
