@@ -39,7 +39,7 @@ jobs:
       run: npm install
 
     - name: Build statics eleventy in docs/
-      run: npx eleventy --output=docs
+      run: npx eleventy --output=docs --pathprefix='resume'
 
     - name: Commit and push docs/
       run: |
