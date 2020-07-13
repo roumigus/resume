@@ -1,11 +1,11 @@
 {
-    "name": "Simon Roumiguieres",
+    "name": "Simon Roumi",
     "occupation": "DevOps Engineer",
     "location": "France",
     "avatar": "avatar.jpg",
     "pronouns": "he/him",
-    "email": "simon.roumiguieres@gmail.com",
-    "telephone": "+33 6 66 77 87 40",
+    "email": "s@gmail.com",
+    "telephone": "+33 X XX XX XX 40",
     "skills": [
         "GNU/Linux and BSD systems, system utilitaries : ssh, sed, strace, supervisor, systemd, package managers",
         "Scripting and basics in programming : POSIX shell, bash, zsh, python, ruby, php, nodejs, rust",
@@ -32,8 +32,8 @@
     "social": [
         {
             "name": "LinkedIn",
-            "user": "simon-roumiguieres",
-            "url": "https://www.linkedin.com/in/simon-roumiguieres-08696686/"
+            "user": "simon-roumi (not public for now)",
+            "url": "https://www.linkedin.com/in/simon-roumi-08696686/"
         }
     ]
 }
