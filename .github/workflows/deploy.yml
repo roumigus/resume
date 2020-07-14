@@ -1,4 +1,8 @@
-# This is a basic workflow to help you get started with Actions
+# This Github Action automatically :
+# * builds the static files (the resume website) in docs/
+# * commits and push docs/ to the same repository (dangerous : this repo modifies itself after each push!)
+# * in the repository settings, Github Pages is activated for the /docs of this repo (master branch)
+# * the website will be accessible at : https://roumigus.github.io/resume/
 
 name: Deploy
 
@@ -24,7 +28,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     
-    # the VM already has python. This ensure we have the right nodejs version in PATH, among other things
+    # the VM already has python. This ensure we have the right python version in PATH, among other things
     - uses: actions/setup-python@v2
       with:
         python-version: '3.x'
@@ -39,15 +43,19 @@ jobs:
       run: npm install
 
     - name: Build statics eleventy in docs/
-      run: npx eleventy --output=docs --pathprefix='resume'
+      run: npx eleventy --output=docs --pathprefix='resume'     # path prefix needed for github pages
 
     - name: Commit and push docs/
       run: |
-        git config --global user.name 'roumigus-deploy'
-        git config --global user.email 'roumigus@deploy.noreply.github.com'
+        git config --global user.name 'deploy'
+        git config --global user.email 'deploy@resume'
         git commit -m "Automated commit /docs by Github Action" docs/
         git push
 
+    # For this task you need :
+    # add a private key in a secret named SSH_DEPLOY_PRIVKEY in the settings of this repo
+    # the corresponding public key and ssh conf for a user cv-deploy on the remote host
+    # the right user permissions (mode) on the remote folder
     #- name: Deploy statics to my Hetzner server via rsync
     #  env:
     #    SSH_REMOTE_USER: "cv-deploy"
