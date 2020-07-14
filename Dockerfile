@@ -11,7 +11,7 @@ FROM node:10-alpine
 RUN apk update && apk add python3 make g++
 
 # Whatever the OS I often force this uid to my main user
-USER 1000
+USER 1001
 
 # Working dir inside the container (you're supposed to -v hostdir:/var/www)
 WORKDIR /var/www
