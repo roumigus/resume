@@ -10,8 +10,11 @@ FROM node:10-alpine
 # Dependencies for some node modules (node-gyp)
 RUN apk update && apk add python3 make g++
 
+# Fix npm cache permisisons issues (fixed in more recent versions)
+RUN mkdir /.npm /.config && chown 1001:0 /.npm /.config
+
 # Whatever the OS I often force this uid to my main user
-USER 1001
+USER 1001:0
 
 # Working dir inside the container (you're supposed to -v hostdir:/var/www)
 WORKDIR /var/www
