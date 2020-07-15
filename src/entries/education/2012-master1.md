@@ -6,4 +6,4 @@ start: 2011-09-01
 end: 2012-07-01
 ---
 
-First year of Master's degree (french : Master 1)
+First year of Master's degree (french: Master 1)

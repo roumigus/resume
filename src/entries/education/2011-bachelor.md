@@ -6,4 +6,4 @@ start: 2008-09-01
 end: 2011-07-01
 ---
 
-Bachelor's degree (french : Licence)
+Bachelor's degree (french: Licence)

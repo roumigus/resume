@@ -1,13 +1,13 @@
-# Usage :
-# Build : docker build -t node:resume .
-# npm install : docker run --rm -it -v $(pwd):/var/www node:resume npm install
-# for dev, build and serve statics : docker run --rm -it -v $(pwd):/var/www -p 8081:8080 node:resume npm start
-# only build statics : docker run --rm -it -v $(pwd):/var/www node:resume npx eleventy --output=dist
-# shell : docker run --rm -it -v $(pwd):/var/www -p 8081:8080 node:resume /bin/sh
+# Usage:
+# Build: docker build -t node:resume .
+# npm install: docker run --rm -it -v $(pwd):/var/www node:resume npm install
+# for dev, build and serve statics: docker run --rm -it -v $(pwd):/var/www -p 8081:8080 node:resume npm start
+# only build statics: docker run --rm -it -v $(pwd):/var/www node:resume npx eleventy --output=dist
+# shell: docker run --rm -it -v $(pwd):/var/www -p 8081:8080 node:resume /bin/sh
 
 FROM node:10-alpine
 
-# Dependencies for some node modules (node-gyp)
+# Dependencies for some node modules (node-gyp, spellchecker)
 RUN apk update && apk add python3 make g++
 
 # Fix npm cache permisisons issues (fixed in more recent versions)

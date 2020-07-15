@@ -7,13 +7,13 @@
     "email": "s@gmail.com",
     "telephone": "+33 X XX XX XX 40",
     "skills": [
-        "GNU/Linux and BSD systems, system utilitaries : ssh, sed, strace, supervisor, systemd, package managers",
-        "Scripting and basics in programming : POSIX shell, bash, zsh, python, ruby, php, nodejs, rust",
-        "Clouds : VmWare, AWS, OVH, Hetzner",
-        "CM, IaC, CI/CD, containerization : chef, ansible, terraform, packer, capistrano, jenkins, git, gitlab, github, docker, kubernetes",
-        "Monitoring : centreon (nagios), datadog, prometheus",
-        "Databases : mysql, galera postgresql, redis, memcache, elasticsearch, kibana, filebeat, logstash, curator",
-        "Webservers, load balancers : apache, nginx, haproxy, varnish, heartbeat"
+        "GNU/Linux and BSD systems, system utilitaries: ssh, sed, strace, supervisor, systemd, package managers",
+        "Scripting and basics in programming: POSIX shell, bash, zsh, python, ruby, php, nodejs, rust",
+        "Clouds: VmWare, AWS, OVH, Hetzner",
+        "CM, IaC, CI/CD, containerization: chef, ansible, terraform, packer, capistrano, jenkins, git, gitlab, github, docker, kubernetes",
+        "Monitoring: centreon (nagios), datadog, prometheus",
+        "Databases: mysql, galera postgresql, redis, memcache, elasticsearch, kibana, filebeat, logstash, curator",
+        "Webservers, load balancers: apache, nginx, haproxy, varnish, heartbeat"
     ],
     "languages": [
         {
