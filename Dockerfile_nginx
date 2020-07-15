@@ -1,0 +1,24 @@
+# Usage:
+# Build: docker build -t resume:v1 -f Dockerfile_nginx
+# Run prod: docker run -d --name resume -p 80:80 resume:v1
+
+# Stage 1 (node): build js static files
+FROM node:10-alpine as node
+
+# Dependencies for some node modules (node-gyp)
+RUN apk update && apk add python3 make g++
+
+# Build static files in /var/www/dist/
+COPY . /var/www
+WORKDIR /var/www
+RUN npm install && npx eleventy --output=dist
+
+
+# Stage 2: serve the statics with nginx
+FROM nginx:stable-alpine
+
+# Copy statics from node image to nginx default's root path
+COPY --from=node /var/www/dist /usr/share/nginx/html
+
+# The nginx's image default: expose 80, keeps the default nginx's conf, default entrypoint, cmd: 
+# https://github.com/nginxinc/docker-nginx/blob/793319d7251c03eccecbf27b60e0cfbbd2d1f400/stable/alpine/Dockerfile#L115
