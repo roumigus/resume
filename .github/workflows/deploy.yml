@@ -12,15 +12,15 @@ on:
   push:
     branches: [ master ]
     paths:
-      - 'src/*'
-      - 'utils/*'
+      - 'src/**'
+      - 'utils/**'
       - 'package.json'
       - 'package-lock.json'
   pull_request:
     branches: [ master ]
     paths:
-      - 'src/*'
-      - 'utils/*'
+      - 'src/**'
+      - 'utils/**'
       - 'package.json'
       - 'package-lock.json'
 
