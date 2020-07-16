@@ -14,11 +14,11 @@ WORKDIR /var/www
 RUN npm install && npx eleventy --output=dist
 
 
-# Stage 2: serve the statics with nginx
+# Stage 2: serve the statics with nginx (http, 80)
 FROM nginx:stable-alpine
 
 # Copy statics from node image to nginx default's root path
 COPY --from=node /var/www/dist /usr/share/nginx/html
 
-# The nginx's image default: expose 80, keeps the default nginx's conf, default entrypoint, cmd: 
-# https://github.com/nginxinc/docker-nginx/blob/793319d7251c03eccecbf27b60e0cfbbd2d1f400/stable/alpine/Dockerfile#L115
+# The nginx's image default: expose 80, keeps the default nginx's conf, default entrypoint, cmd...
+# https://github.com/nginxinc/docker-nginx/blob/master/stable/alpine/Dockerfile#L110
