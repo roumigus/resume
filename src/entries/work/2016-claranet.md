@@ -7,9 +7,9 @@ start: 2016-01-15
 end: 2019-09-01
 ---
 
-Claranet is a web hosting company providing technical expertise, building and operating high availaible infrastructures on public clouds, private clouds and baremetal.
+Claranet is a web hosting company providing technical expertise, building and operating high available infrastructures on public clouds, private clouds and baremetal.
 
-Devops in the Business Unit focused on challenging customers deploying complex SaaS applications, with 40+ customers in our portfolio, I touched on various aspects of the engineering job:
+Devops in the Business Unit focused on challenging customers deploying complex SaaS applications. With 40+ customers in our portfolio, I touched on various aspects of the engineering job:
 
 * Auditing: defining the problem space, taking in every customers needs and constraints, offering adapted solutions, experimenting by conducting Proof Of Concepts, designing architectures and looking for optimal new processes
 * Implementation: building high availaible infrastructures, from inception to migration, operating infrastructures (run, scalling, upgrade, security updates), resolving incidents, being on-call
