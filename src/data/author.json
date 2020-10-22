@@ -1,19 +1,20 @@
 {
     "name": "Simon Roumi",
-    "occupation": "DevOps Engineer",
-    "location": "France",
+    "occupation": "DevOps / Cloud Engineer",
+    "location": "",
     "avatar": "avatar.jpg",
     "pronouns": "he/him",
-    "email": "s@gmail.com",
+    "email": "simon.roumi@gmail.com",
     "telephone": "+33 X XX XX XX 40",
     "skills": [
         "GNU/Linux and BSD systems, system utilitaries: ssh, sed, strace, supervisor, systemd, package managers",
         "Scripting and basics in programming: POSIX shell, bash, zsh, python, ruby, php, nodejs, rust",
+        "Containerization: docker, kubernetes",
         "Clouds: VmWare, AWS, OVH, Hetzner",
-        "CM, IaC, CI/CD, containerization: chef, ansible, terraform, packer, capistrano, jenkins, git, gitlab, github, docker, kubernetes",
-        "Monitoring: centreon (nagios), datadog, prometheus",
-        "Databases: mysql, galera postgresql, redis, memcache, elasticsearch, kibana, filebeat, logstash, curator",
-        "Webservers, load balancers: apache, nginx, haproxy, varnish, heartbeat"
+        "CM, IaC, CI/CD: chef, ansible, terraform, packer, capistrano, jenkins, git, gitlab, github",
+        "Monitoring: datadog, prometheus",
+        "Databases: mysql, galera, postgresql, redis, elasticsearch, kibana, filebeat, logstash, curator",
+        "Webservers, load balancers: apache, nginx, haproxy, varnish"
     ],
     "languages": [
         {
@@ -32,8 +33,8 @@
     "social": [
         {
             "name": "LinkedIn",
-            "user": "simon-roumi (not public for now)",
-            "url": "https://www.linkedin.com/in/simon-roumi-08696686/"
+            "user": "simon-roumi",
+            "url": "https://www.linkedin.com/in/simon-roumi-08696686"
         }
     ]
 }

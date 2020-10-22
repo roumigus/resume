@@ -9,9 +9,13 @@ end: 2019-09-01
 
 Claranet is a web hosting company providing technical expertise, building and operating high available infrastructures on public clouds, private clouds and baremetal.
 
-Devops in the Business Unit focused on challenging customers deploying complex SaaS applications. With 40+ customers in our portfolio, I touched on various aspects of the engineering job:
+Devops in the Business Unit focused on challenging customers deploying complex SaaS applications.
+With 40+ customers in our portfolio, I touched on various aspects of the engineering job. Among many things:
 
-* Auditing: defining the problem space, taking in every customers needs and constraints, offering adapted solutions, experimenting by conducting Proof Of Concepts, designing architectures and looking for optimal new processes
-* Implementation: building high availaible infrastructures, from inception to migration, operating infrastructures (run, scalling, upgrade, security updates), resolving incidents, being on-call
-* Making use of modern paradigms and devops best practices: automating tasks, Infrastructure As Code, Configuration Management, Continuous Integration/Continuous Delivery, versionning and peer-review, continuous improvement, writting documentation, keeping it up to date, redacting postmortems and handling communication with the customer
-* Contributing to the company’s tooling and in-house training: wellcoming and training new recruits on some of our tooling (onboarding process), mentoring, development of in-house tooling, technical writting for the internal blog
+* 💡  Auditing, defining the problem space, advising, offering adapted solutions
+* 🏗️  Building high available infrastructures, from inception to migration
+* 🚀  Operating infrastructures, making them run smoothly, deploy code and new features, scaling
+* 🚨  Dealing with nasty bugs, downtimes, security incidents
+* 📖  Staying up to date with modern paradigms and devops best practices and tools: automating tasks, Infrastructure As Code, Configuration Management, Continuous Integration/Continuous Delivery, versioning and peer-review
+* 🔧  Contributing to the company’s tooling:  internal tooling development
+* 🍻  Welcoming and training new recruits (onboarding process), sharing work experiences with colleagues, mentoring, teaching courses (in-house training)

@@ -3,4 +3,6 @@ tags: introduction
 title: About Me
 ---
 
-[I am an engineer](https://www.youtube.com/watch?v=BKorP55Aqvg). I solve problems by using the right tool for the right job.
+I'm a Linux guy, self-taught, who enjoys traveling and learning new things. As a devops and passionate geek I like building solid stuff when working on complex and innovative projects.
+
+Currently looking for a new experience abroad.
