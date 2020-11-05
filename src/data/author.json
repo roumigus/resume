@@ -13,7 +13,7 @@
         "Clouds: VmWare, AWS, OVH, Hetzner",
         "CM, IaC, CI/CD: chef, ansible, terraform, packer, capistrano, jenkins, git, gitlab, github",
         "Monitoring: datadog, prometheus",
-        "Databases: mysql, galera, postgresql, redis, elasticsearch, kibana, filebeat, logstash, curator",
+        "Databases, logs, queuing: mysql, galera, postgresql, elasticsearch, kibana, filebeat, logstash, curator, redis, rabbitMQ",
         "Webservers, load balancers: apache, nginx, haproxy, varnish"
     ],
     "languages": [

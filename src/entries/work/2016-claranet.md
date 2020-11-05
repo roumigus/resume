@@ -15,7 +15,7 @@ With 40+ customers in our portfolio, I touched on various aspects of the enginee
 * 💡  Auditing, defining the problem space, advising, offering adapted solutions
 * 🏗️  Building high available infrastructures, from inception to migration
 * 🚀  Operating infrastructures, making them run smoothly, deploy code and new features, scaling
-* 🚨  Dealing with nasty bugs, downtimes, security incidents
+* 🚨  Troubleshoot, dealing with nasty bugs, downtimes, security incidents
 * 📖  Staying up to date with modern paradigms and devops best practices: agile, automating tasks, Infrastructure As Code, Configuration Management, Continuous Integration/Continuous Delivery, versioning, peer-review
 * 🔧  Contributing to the company’s tooling: internal tooling development
 * 🍻  Welcoming and training new recruits (onboarding process), sharing work experiences with colleagues, mentoring, teaching courses (in-house training)
